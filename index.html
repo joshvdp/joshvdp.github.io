@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>joshvdp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">joshvdp
+        <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="https://api.iconify.design/material-symbols/dark-mode-outline.svg"
+              src-light="https://api.iconify.design/material-symbols/dark-mode-outline.svg"
+              src-dark="https://api.iconify.design/ph/sun-duotone.svg?color=white"
+              alt="Theme Toggle"
+            />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">joshvdp
+        <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="https://api.iconify.design/material-symbols/dark-mode-outline.svg"
+              src-light="https://api.iconify.design/material-symbols/dark-mode-outline.svg"
+              src-dark="https://api.iconify.design/ph/sun-duotone.svg?color=white"
+              alt="Theme Toggle"
+            />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id="pic-icon" src="./assets/favicon.png" alt="Joshua Ver Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joshua Ver Dela Peña</h1>
+        <p class="section__text__p2">Game Developer / Front-end Developer / Quality Assurance</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick=" window.open('./assets/jvdelapena-cv.pdf'); return true;">
+            View CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/joshuaver-delapena/" target="_blank"><img
+            src="https://api.iconify.design/bi/linkedin.svg"
+            src-light="https://api.iconify.design/bi/linkedin.svg"
+            src-dark="https://api.iconify.design/bi/linkedin.svg?color=white"
+            alt="LinkedIn Profile"
+            class="icon linkedin-icon"
+          /></a>
+          <a href="https://github.com/joshvdp" target="_blank"><img
+            src="https://api.iconify.design/simple-icons/github.svg"
+            src-light="https://api.iconify.design/simple-icons/github.svg"
+            src-dark="https://api.iconify.design/simple-icons/github.svg?color=white"
+            alt="Github Profile"
+            class="icon github-icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/jv1.png"
+            alt="Jv picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <a href="https://www.neu.edu.ph/main/" target="_blank"><img
+                src="https://api.iconify.design/material-symbols/school.svg"
+                src-light="https://api.iconify.design/material-symbols/school.svg"
+                src-dark="https://api.iconify.design/material-symbols/school.svg?color=white"
+                alt="School icon"
+                class="icon"
+              /></a>
+              <h3>School</h3>
+              <p class="schInfo">New Era University, Quezon City, Philippines <br> College of Informatics and Computing Studies <br>Class of 2024</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://api.iconify.design/mdi/certificate.svg"
+                src-light="https://api.iconify.design/mdi/certificate.svg"
+                src-dark="https://api.iconify.design/mdi/certificate.svg?color=white"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Degree</h3>
+              <p class="schInfo">Bachelor of Science in <br>Entertainment and Multimedia Computing <br>major in Game Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Joshua is a BSc. EMC major in game development a graduating student with a passion for computers. 
+              While not programming games, he spends his time honing his skills in front end web design with HTML, CSS, and JavaScript. 
+              Additionally, he has gained experience as a freelance Software Quality Assurance.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <!--<p class="section__text__p1">My</p>-->
+      <h1 class="title">Language and Tools</h1>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Language</h2>
+
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/html-5.svg"
+                  src-light="https://api.iconify.design/logos/html-5.svg"
+                  src-dark="https://api.iconify.design/logos/html-5.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/skill-icons/css.svg"
+                  src-light="https://api.iconify.design/skill-icons/css.svg"
+                  src-dark="https://api.iconify.design/skill-icons/css.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/vscode-icons/file-type-js-official.svg"
+                  src-light="https://api.iconify.design/vscode-icons/file-type-js-official.svg"
+                  src-dark="https://api.iconify.design/vscode-icons/file-type-js-official.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/c-sharp.svg"
+                  src-light="https://api.iconify.design/logos/c-sharp.svg"
+                  src-dark="https://api.iconify.design/logos/c-sharp.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/java.svg"
+                  src-light="https://api.iconify.design/logos/java.svg"
+                  src-dark="https://api.iconify.design/logos/java.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/python.svg"
+                  src-light="https://api.iconify.design/logos/python.svg"
+                  src-dark="https://api.iconify.design/logos/python.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://api.iconify.design/skill-icons/androidstudio-dark.svg"
+                  src-light="https://api.iconify.design/skill-icons/androidstudio-dark.svg"
+                  src-dark="https://api.iconify.design/skill-icons/androidstudio-dark.svg"
+                  alt="Android icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Android Studio</h3>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="https://api.iconify.design/skill-icons/unity-dark.svg"
+                  src-light="https://api.iconify.design/skill-icons/unity-dark.svg"
+                  src-dark="https://api.iconify.design/skill-icons/unity-dark.svg"
+                  alt="Unity icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity Game Engine</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/adobe-xd.svg"
+                  src-light="https://api.iconify.design/logos/adobe-xd.svg"
+                  src-dark="https://api.iconify.design/logos/adobe-xd.svg"
+                  alt="Bootstrap icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Xd</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/logos/figma.svg"
+                  src-light="https://api.iconify.design/logos/figma.svg"
+                  src-dark="https://api.iconify.design/logos/figma.svg"
+                  alt="Bootstrap icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/skill-icons/blender-dark.svg"
+                  src-light="https://api.iconify.design/skill-icons/blender-dark.svg"
+                  src-dark="https://api.iconify.design/skill-icons/blender-dark.svg"
+                  alt="Bootstrap icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://api.iconify.design/skill-icons/bootstrap.svg"
+                  src-light="https://api.iconify.design/skill-icons/bootstrap.svg"
+                  src-dark="https://api.iconify.design/skill-icons/bootstrap.svg"
+                  alt="Bootstrap icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap Studio</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  
+      <!--<img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Game Projects</h2>
+            <p class="labeltxt">View my Game Projects in Itch.io</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick="javascript:window.open('https://github.com/joshvdp/UNITY-Game-Project-Terebinth', '_blank');"
+              >
+                Repo
+              </button>
+              <button
+                class="btn btn-color-1"
+                onClick="javascript:window.open('https://kakaroot64.itch.io/', '_blank');"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Frontend Projects</h2>
+            <p class="labeltxt">View my projects in Behance</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick="javascript:window.open('https://github.com/joshvdp?tab=repositories', '_blank');"
+              >
+                Repo
+              </button>
+              <button
+                class="btn btn-color-1"
+                onClick="javascript:window.open('https://www.behance.net/joshvdp', '_blank');"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/favicon.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Github</h2>
+            <p class="labeltxt">View my upcoming projects in Github</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick="javascript:window.open('https://github.com/joshvdp?tab=repositories', '_blank');"
+              >
+                Repositories
+              </button>
+              <button
+                class="btn btn-color-1"
+                onClick="javascript:window.open('https://github.com/joshvdp', '_blank');"
+              >
+                View Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://api.iconify.design/entypo/email.svg"
+            src-light="https://api.iconify.design/entypo/email.svg"
+            src-dark="https://api.iconify.design/entypo/email.svg?color=white"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">joshuaver.delapena@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://api.iconify.design/bi/linkedin.svg"
+            src-light="https://api.iconify.design/bi/linkedin.svg"
+            src-dark="https://api.iconify.design/bi/linkedin.svg?color=white"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <p><a href="https://www.linkedin.com/in/joshuaver-delapena/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2023 joshvdp. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="switchTheme.js"></script>
+  </body>
+</html>
