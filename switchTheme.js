@@ -38,6 +38,7 @@ function setTheme()
 }
 
 
+//My mode setter 
 function setDarkMode() 
 {
   document.body.setAttribute("theme", "dark");
