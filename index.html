@@ -48,6 +48,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -203,17 +204,21 @@
       </div>
     </section>
     <section id="contact">
-      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="https://api.iconify.design/entypo/email.svg"
-            src-light="https://api.iconify.design/entypo/email.svg"
-            src-dark="https://api.iconify.design/entypo/email.svg?color=white"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="https://gmail.com/">joshuaver.delapena@gmail.com</a></p>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-forms">
+          <div class="contact-title">
+              <h2>Get in touch</h2>
+          </div>
+          <input type="hidden" name="access_key" value="2aa22ed3-5796-4f92-b97f-289b9f9bf0b2">
+          <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+          <textarea name="Message" placeholder="Please Leave a Message." class="contact-inputs"></textarea>
+          <button type="submit" class="btn btn-color-1">Submit</button>
+      </form>
+        </div>
         </div>
       </div>
     </section>

@@ -15,6 +15,10 @@
   --button-border: rgb(53, 53, 53) 0.1rem solid;
   --button-border-2: rgb(255, 255, 255) 0.1rem solid;
   --container-border: rgb(163, 163, 163);
+  --text-forms: rgb(53, 53, 53);
+  --forms: rgb(20, 20, 20);
+  --forms-text: rgb(53, 53, 53);
+  --forms-border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 /* Dark Mode */
@@ -31,6 +35,9 @@
   --button-border-2: rgb(0, 0, 0) 0.1rem solid;
   --container-border: rgb(92, 92, 92);
   --background: #2C2C2C;
+  --text-forms: rgb(53, 53, 53);
+  --forms: rgb(196, 196, 196);
+  --forms-border: rgb(202, 202, 202) 0.1rem solid;
 }
 
 * {
@@ -477,6 +484,48 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+.contact-title h2
+{
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+.contact-inputs 
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 8px;
+  border: var(--forms-border);
+  width: 400px;
+  height: 50px;;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  
+  
+}
+.contact-forms textarea
+{
+    height: 100px;
+    padding-top: 10px;
+    
+}
+.contact-inputs:focus
+{
+    border: var(--forms-border);
+}
+.contact-inputs::placeholder
+{
+    color: var(--forms-text);
+}
+.contact-forms button
+{
+  display: block;
+  margin: auto;
 }
 
 /* FOOTER SECTION */
