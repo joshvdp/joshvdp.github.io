@@ -511,7 +511,7 @@ article .icon {
 }
 .contact-forms textarea
 {
-    height: 60px;
+    height: 100px;
     padding-top: 10px;
     resize: none;
     border: none;
@@ -525,7 +525,8 @@ article .icon {
 .contact-inputs::placeholder
 {
     color: var(--forms-text);
-    font-style: italic;
+    
+    font-family: "Poppins", sans-serif;
 }
 .contact-forms button
 {
