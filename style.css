@@ -59,6 +59,7 @@ html {
 }
 
 p {
+  font-size: larger;
   color: var(--secondary-color-2);
 }
 
